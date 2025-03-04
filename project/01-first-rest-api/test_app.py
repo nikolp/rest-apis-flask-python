@@ -30,13 +30,7 @@ def test_post_store(myclient):
     resp = myclient.get("/store")
     resp_dict = resp.json
     assert len(resp_dict['stores']) == 2
-    # data = resp.get_json()
-    # assert isinstance(data, dict)
-    # print(data)
-    # assert 'stores' in data
-    # assert isinstance(data['stores'], list) 
-    # st = data['stores'][0]
-    # assert st["name"] == "My Store" 
+
 
 # class MyTest(unittest.TestCase):
 #     def setUp(self):
